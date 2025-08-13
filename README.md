@@ -2,8 +2,6 @@
 
 A responsive, multi-page admin dashboard for freelance professionals with project tracking, analytics, and profile management.
 
-![Dashboard Screenshot](./screenshot.png) *(Replace with actual screenshot)*
-
 ## Features
 
 - **Multi-page Interface**:
