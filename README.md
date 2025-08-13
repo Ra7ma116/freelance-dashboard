@@ -57,9 +57,9 @@ src/
 ## 📦 How to Use
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/freelance-dashboard.git
-    ```
+ ```
+ git clone https://github.com/yourusername/freelance-dashboard.git
+  ```
 2. Navigate to the project directory
  ```
 cd freelance-dashboard
