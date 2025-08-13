@@ -25,7 +25,7 @@ A responsive, multi-page admin dashboard for freelance professionals with projec
   - Adapts to all screen sizes
   - Touch-friendly interactive elements
 
-  ## 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - React.js
 - React Router
