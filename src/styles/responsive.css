@@ -1,0 +1,103 @@
+/* Mobile First Approach - Base styles (up to 767px) */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 250px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease;
+    z-index: 90;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.main-content {
+    padding: 15px;
+}
+
+/* Summary Cards - Stack on mobile */
+.summary-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* Projects Grid - Single column on mobile */
+.projects-grid {
+    grid-template-columns: 1fr;
+}
+
+/* Charts - Stack vertically on mobile */
+.chart-section {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) {
+    .app-container {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 60px 1fr;
+        grid-template-areas:
+            "sidebar header"
+            "sidebar main";
+    }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Desktop (1024px - 1279px) */
+@media (min-width: 1024px) {
+    .summary-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .chart-section {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* Large Desktop (1280px and up) */
+@media (min-width: 1280px) {
+    .main-content {
+        padding: 30px;
+        max-width: 1400px;
+        margin: 0 auto;
+        width: 100%;
+    } }
