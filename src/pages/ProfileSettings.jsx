@@ -2,10 +2,10 @@ import { useState } from 'react';
 
 const ProfileSettings = () => {
     const [profile, setProfile] = useState({
-        name: 'John Doe',
-        email: 'john.doe@example.com',
+        name: 'Rahma Samy Helmy',
+        email: 'rahmasamy654@gmail.com',
         profession: 'Web Developer',
-        bio: 'Freelance developer specializing in React and Node.js',
+        bio: 'Web developer specializing in React and Node.js',
         password: '',
         newPassword: '',
         confirmPassword: ''
@@ -163,5 +163,6 @@ const ProfileSettings = () => {
         </div>
     );
 };
+
 
 export default ProfileSettings;
